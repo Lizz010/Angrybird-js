@@ -1,0 +1,27 @@
+<html>
+<head>
+    <script>
+        function comienzo() {
+            liz = Math.floor(Math.random() * screen.width);
+            birds = Math.floor(Math.random() * screen.height);
+            img = document.getElementById("imagen");
+            img.style.left = liz + "px";
+            img.style.top = birds + "px";
+        }
+        function time() {
+            setInterval(comienzo, 2000);
+        }
+    </script>
+    <style>
+        img {
+            position: relative;
+            left: 200px;
+            top: 200px;
+        }
+    </style>
+<body>
+    <img id="imagen" src="img/angrybird.png" ondblclick="time()" />
+</body>
+</head>
+
+</html>
